@@ -16,5 +16,14 @@ namespace DrzavnaMaturaPetar
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2(this);
+            if (comboBox1.Text != "" && comboBox2.Text != "") { f2.Show(); this.Hide(); }
+            else MessageBox.Show("Niste uneli neki obavezan podatak", "Error 404");
+        }
+
+        
     }
 }
